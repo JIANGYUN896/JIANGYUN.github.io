@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>俄罗斯方块</title>
+        <style>
+            html{
+               background-color:rgb(94,77,77);
+               color:#c2ffad;
+            }
+            #score{
+                color:red;
+            }
+            #rows{
+                color:blue;
+            }
+            #left{
+               display:inline-block;
+               width:230px;
+               height:600px;
+            }
+            #center{
+               background-color:green; 
+               display:inline-block;
+               width:230px;
+               height:600px;
+               vertical-align:top;
+            }
+            #right{
+               background-color:blue; 
+               display:inline-block;
+               width:230px;
+               height:600px;
+               vertical-align:top;
+            }
+        </style>
+    <head>
+    <body>
+        <div  id="left">左侧
+            <P>分数(Score):<span  id="Score">00000</span></P>
+            <P>已消灭(Rows):<span  id="Rows">0</span></P>
+            <P>
+                操作方法：<br/>
+                ↑：方块顺时针变形<br/>
+                ←：方块向左移动<br/>
+                →：方块向右移动<br/>
+                ↓：方块加速掉落
+             </p>
+        </div>
+        <div  id="center">中间</div>
+        <div  id="right">右侧</div>
+    </body>
+</html>
